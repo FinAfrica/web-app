@@ -7,7 +7,7 @@ export const environment = {
   hash: env.mifos_x.hash,
   // For connecting to server running elsewhere update the tenant identifier
   fineractPlatformTenantId: window['env']['fineractPlatformTenantId'] || 'default',
-  fineractPlatformTenantIds: window['env']['fineractPlatformTenantIds'] || 'default',
+  fineractPlatformTenantIds: window['env']['fineractPlatformTenantIds'] || 'default,kenya_test',
   // For connecting to others servers running elsewhere update the base API URL
   baseApiUrls: window['env']['fineractApiUrls'] ||
   'https://fin-client-be.fin-connect.net,https://qa-be.fin-connect.net,https://dev-be.fin-connect.net,https://localhost:8443',
