@@ -1,4 +1,4 @@
-<mat-toolbar fxLayout="row" color="primary" id="mifosx-toolbar">
+<mat-toolbar fxLayout="row" id="mifosx-toolbar">
 
   <button mat-icon-button *ngIf="!sidenavCollapsed" (click)="toggleSidenav()" matTooltip="{{ 'tooltips.Toggle Hide/Open' | translate}}">
     <fa-icon icon="bars" size="lg"></fa-icon>
@@ -9,7 +9,7 @@
     <fa-icon *ngIf="sidenavCollapsed" icon="chevron-right"></fa-icon>
   </button>
 
-  <nav mat-tab-nav-bar backgroundColor="primary" class="ml-1">
+  <nav mat-tab-nav-bar class="ml-1">
 
     <a #institution mat-tab-link class="tab-link" [matMenuTriggerFor]="institutionMenu" #institutionMenuTrigger="matMenuTrigger">
       <fa-icon class="mr-05" icon="university" size="lg"></fa-icon>
