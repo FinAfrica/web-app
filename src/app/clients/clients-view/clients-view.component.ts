@@ -50,6 +50,8 @@ export class ClientsViewComponent implements OnInit {
         this.clientImage = this._sanitizer.bypassSecurityTrustResourceUrl(base64Image);
       }, (error: any) => {}
     );
+
+    
   }
 
   isActive(): boolean {
