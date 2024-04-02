@@ -14,6 +14,7 @@ import { UploadImageDialogComponent } from './custom-dialogs/upload-image-dialog
 import { CaptureImageDialogComponent } from './custom-dialogs/capture-image-dialog/capture-image-dialog.component';
 
 /** Custom Services */
+
 import { ClientsService } from '../clients.service';
 
 @Component({
@@ -28,6 +29,7 @@ export class ClientsViewComponent implements OnInit {
   clientImage: any;
   clientTemplateData: any;
 
+  
   constructor(private route: ActivatedRoute,
               private router: Router,
               private clientsService: ClientsService,
@@ -50,8 +52,6 @@ export class ClientsViewComponent implements OnInit {
         this.clientImage = this._sanitizer.bypassSecurityTrustResourceUrl(base64Image);
       }, (error: any) => {}
     );
-
-    
   }
 
   isActive(): boolean {
